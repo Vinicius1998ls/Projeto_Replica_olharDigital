@@ -1,0 +1,467 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* cebecalho */
+
+header {
+    background-color: black;
+    display: flex;
+}
+
+.header-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;    
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    margin-left: 30%;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style-type: none; /* remove os pontos da lista */   
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+}
+
+.menu ul li:hover {
+    text-decoration: underline;
+}
+
+.menu ul li .dp-menu {
+    display: none;
+    padding: 5px 0px;
+    margin-top: 10px;
+    width: 250px;
+    z-index: 10;
+}
+
+.menu ul li .dp-menu li{
+    padding: 3px 0px;
+    text-decoration: none;
+}
+
+.menu ul li .dp-menu li:hover{
+    margin-left: 10px;
+    transition: 120ms;
+}
+
+
+.menu ul li:hover .dp-menu {
+    display: block;
+    position: absolute;
+    background-color: black;   
+}
+
+.redes-sociais {
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.redes-sociais img {
+    height: 30px;
+    margin: 0px 5px;
+    padding: 3px 5px;
+}
+
+ /* cabecalho mobile */
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile-itens {
+    display: none;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu {
+        display: none;
+    }
+
+    .redes-sociais {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+
+    .menu-mobile {
+        display: inline;
+    }
+
+    .menu-mobile a {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 0.8rem;      
+    }
+
+    
+
+    .botao-abrir {
+        position: relative;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 0.9rem;
+        width: 35px;
+        background-color: #404040;
+        transition: 0.3s;
+        padding: 18px 20px; 
+        margin: 0;
+        z-index: 2;
+    }
+
+    .botao-abrir:hover {
+        background-color: #616161;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .botao-fechar {
+        display: inline-block;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        background-color: #404040; 
+        margin: 12px 0 12px 250px;
+    }
+
+    .botao-fechar:hover {
+        background-color: #616161;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    .menu-mobile-itens {
+        display: none;
+        position: absolute;
+        background-color: black;
+        margin-top: -30px;
+        width: 300px;
+        box-shadow: 1px 1px 20px #2e2e2e;
+        z-index: 3;
+    }
+
+    .menu-mobile-itens img {
+        height: 25px;
+    }
+
+    .mobile-redes-sociais {
+        display: flex;
+        vertical-align: center;
+        justify-content: space-around;
+        margin: 0 50px 0 45px;       
+    }
+
+    .mobile-redes-sociais .caixa-icone{
+        display: inline;
+        padding: 5px;
+        margin-top: 5px;        
+    }
+
+    .mobile-itens ul{
+        padding: 0px 10px;
+    }
+
+    .mobile-itens ul li {
+        padding: 3px 5px;
+    }
+
+    .mobile-itens li {
+        list-style: none;
+    }
+
+    .mobile-itens a {
+        font-family: 'Kanit', sans-serif;
+        font-size: 1rem;
+    }
+
+    .logo-mobile {
+        display: block;
+        margin-right: 45%;
+                
+    }
+
+    .logo-mobile img {
+        height: 35px;
+        margin: 10px 0;
+    }
+
+    .fundo {
+        display: none;
+        position: absolute;
+        background-color: white;
+        filter: opacity(40%);
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+/* destaques */
+
+.noticias-destaques {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;    
+    justify-content: stretch;
+    gap: 10px; 
+    padding: 20px;       
+}
+
+.destaque-principal {
+    display: flex;    
+    overflow: hidden;
+    justify-content: center;
+    width: 50%;
+    margin-left: 1.5%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.destaque-principal img {
+    width : 100%;    
+    border-radius: 20px;
+    filter: brightness(70%);
+    transition: 0.5s;
+}
+
+.destaque-principal:hover img {
+    transform: scale(1.02);
+}
+
+.caixa-titulo-principal {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.caixa-titulo-principal h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 28pt;
+    margin: 0 20px 10px 20px;
+    color: white;
+    word-spacing: 1px;
+    letter-spacing: 1px;    
+}
+
+.destaques {
+    display: flex;
+    justify-content: center;    
+    overflow: hidden;
+    width: 22.5%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.destaques img {
+    width: 100%;
+    border-radius: 20px;
+    filter: brightness(70%);
+    transition: 0.5s;
+}
+
+.destaques:hover img {
+    transform: scale(1.02);
+}
+
+.caixa-titulo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.caixa-titulo h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    line-height: 20pt;
+    margin: 0 20px 10px 20px;
+    color: white;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1000px) {
+    .noticias-destaques {
+        flex-wrap: wrap;
+    }
+
+    .destaque-principal {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .destaques {
+        flex: 1;
+    }
+}
+
+/* ultimas meterias */
+
+.ultimas-materias {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-ultimas-materias {
+    display: block;
+    width: 160px;
+    font-size: 0.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: #2e2e2e;
+    text-align: center;
+    margin: 30px 0 10px 20px;
+}
+
+.titulo-ultimas-materias h2 {
+    display: inline;    
+}
+
+.grid-ultimas-materias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-ultimas-materias {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 20px 20px 20px 20px;
+    gap: 20px;
+}
+
+.imagem-card {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.imagem-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.texto-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    padding: 5px 5px 0 5px;
+    transition: 0.6s;
+}
+
+.titulo-card {    
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.titulo-card h2 {
+    margin: 0;
+}
+
+.paragrafo-card {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9rem;
+}
+
+.leia-mais {
+    text-align: right;
+}
+
+.card-ultimas-materias:hover .texto-card {
+    color: green;
+    transition: 0.4s;
+}
+
+.card-ultimas-materias:hover .imagem-card img {
+    transform: scale(1.03);
+    transition: 1s;
+}
+
+@media (max-width: 1000px) {
+    .card-ultimas-materias {
+        grid-template-columns: 1fr;
+    }
+
+    .paragrafo-card {
+        margin: 10px 0;
+    }
+}
+
+/* rodape */
+
+footer {
+    background-color: #14151a;
+}
+
+.logo-footer {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.logo-footer img {
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+.linha-footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.texto-footer {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
+}

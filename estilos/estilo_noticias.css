@@ -1,0 +1,30 @@
+.titulo {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    justify-content: center;
+    
+}
+
+.titulo h1 {
+    text-align: center;
+    margin: 50px 20px 30px 20px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-indent: 40px
+}
+
+.texto p {
+    text-align: justify;
+    margin: 0 40px;
+}
