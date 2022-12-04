@@ -435,6 +435,40 @@ header {
     }
 }
 
+.paginacao {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.pagina-atual {
+    margin: 0 2px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1rem;    
+    padding: 10px 15px;
+    border-radius: 5px;    
+}
+
+.outras-paginas {
+    margin: 0 2px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1rem;    
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px;
+    border-color: #bababa;
+    border-style: solid;
+    background-color: #dbdbdb;
+}
+
+.outras-paginas:hover {
+    background-color: #00750a;
+    color: white;
+
+}
+
 /* rodape */
 
 footer {
