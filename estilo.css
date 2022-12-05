@@ -245,8 +245,7 @@ header {
     max-width: 1400px;
     margin: 0 auto;
     align-items: center;    
-    justify-content: stretch;
-    gap: 10px; 
+    justify-content: center; 
     padding: 20px;       
 }
 
@@ -255,7 +254,7 @@ header {
     overflow: hidden;
     justify-content: center;
     width: 50%;
-    margin-left: 1.5%;
+    margin: 0 5px;
     position: relative;
     border-radius: 20px;
 }
@@ -295,6 +294,7 @@ header {
     width: 22.5%;
     position: relative;
     border-radius: 20px;
+    margin: 0 5px;
 }
 
 .destaques img {
@@ -327,6 +327,7 @@ header {
 @media (max-width: 1000px) {
     .noticias-destaques {
         flex-wrap: wrap;
+        gap: 10px;
     }
 
     .destaque-principal {
