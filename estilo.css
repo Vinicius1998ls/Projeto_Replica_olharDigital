@@ -218,8 +218,8 @@ header {
 
     .logo-mobile {
         display: block;
-        margin-right: 45%;
-                
+        margin-right: 50%;
+        transform: translate(75px)                
     }
 
     .logo-mobile img {
